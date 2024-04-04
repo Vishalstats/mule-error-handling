@@ -30,6 +30,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 		<http:listener doc:name="Listener" doc:id="6309012a-fd96-4e4d-b124-dade1d72000d" config-ref="HTTP_Listener_config" path="/error2"/>
 		<set-payload value="Hello" doc:name="Set Payload" doc:id="51b7abd6-5572-4e57-9b6b-e33b3dcd453c" />
 		<flow-ref doc:name="Flow Reference" doc:id="21ce58ef-ae15-4836-835f-6986b60a0b00" name="errorhandlingSub_Flow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f86a55dc-ba3f-4930-9dc3-05fab4679d4b" message="dummy logger"/>
 	</flow>
 	<sub-flow name="errorhandlingSub_Flow" doc:id="9ff7d0a7-e12d-4a3c-b265-d8a803872bb3" >
 		<try doc:name="Try" doc:id="39fabb56-dc78-4fc2-846e-475ee74d197d" >
